@@ -5,11 +5,13 @@ function App() {
     <div className="App">
       <h1>Hello World</h1>
       <Link to="/">Home</Link>
-      <Link to="MyPage">My Pge</Link>
+      <Link to="MyPage">My Page</Link>
+      <Link to="Contancts">Contancts</Link>
 
       <Routes>
         <Route path="/" element={<h2>Hello World</h2>} />
         <Route path="MyPage" element={<h2>Bye World</h2>} />
+        <Route path="Contancts" element={<h2>hello</h2>}/>
       </Routes>
     </div>
   );
