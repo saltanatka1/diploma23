@@ -1,0 +1,11 @@
+.Nav .NavItem a {
+  color:#000;
+  text-decoration: none;
+}
+
+.Nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+
+}
