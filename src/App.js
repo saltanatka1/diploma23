@@ -17,6 +17,7 @@ function App() {
           <Route path="/history" element={<History/>} />
           <Route path="/contacts" element={<Contacts/>} />
           <Route path="/delivery" element={<Delivery/>} />
+          <Route path="/categories/:slug" element={<Category/>} />
         </Routes>
       </Layout>
     </div>
