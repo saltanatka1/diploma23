@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Delivery from "./pages/Delivery";
 import History from "./pages/History";
+import Category from "./pages/Category";
 
 function App() {
   return (
