@@ -8,6 +8,7 @@ export default function CategoryList (){
     {id:4,name:"Sleeveless jackets", slug:"sleeveless-jackets"},
     {id:5,name:"Beldemchi",slug:"beldemchi"},
     {id:6,name:"Shoes",slug:"shoes"},
+    {id:7,name:"Headdress",slug:"headdress"},
   ];
 
   const output = categories.map((category) =>(

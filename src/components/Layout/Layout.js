@@ -13,7 +13,7 @@ export default function Layout({children}) {
         <CategoryList/>
       </aside>
       <main>{children}</main>
-      <footer></footer>
+      <footer>footer</footer>
     </div>
   );
 }
