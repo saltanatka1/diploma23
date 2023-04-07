@@ -3,6 +3,8 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
+import Delivery from "./pages/Delivery";
+import History from "./pages/History";
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/history" element={<History/>} />
           <Route path="/contacts" element={<Contacts/>} />
-          <Route path="/delivery" element={<h1>Delivery</h1>} />
+          <Route path="/delivery" element={<Delivery/>} />
         </Routes>
       </Layout>
     </div>
