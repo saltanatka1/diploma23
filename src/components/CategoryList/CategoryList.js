@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "./CategoryList.css";
 
 export default function CategoryList (){
   const categories = [
@@ -21,7 +22,7 @@ export default function CategoryList (){
 
   return (
     <div className="CategoryList">
-      <h3>Categories</h3>
+      <h2>Categories</h2>
       <ul>{output}</ul>
     </div>
   )

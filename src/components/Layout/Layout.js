@@ -6,8 +6,8 @@ export default function Layout({children}) {
   return (
     <div className="Layout">
       <header>
-        <Nav/>
         <Logo/>
+        <Nav/>
       </header>
       <aside>
         <CategoryList/>

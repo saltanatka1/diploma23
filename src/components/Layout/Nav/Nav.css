@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Poppins:ital,wght@0,100;0,400;1,900&family=Roboto:ital,wght@0,300;0,700;0,900;1,900&display=swap');
 .Nav .NavItem a {
   color:#000;
   text-decoration: none;
   font-size: 20px;
   padding:10px;
+}
+
+.Nav .NavItem a:hover {
+  color:rgba(249, 243, 243, 0.8);
+  font-size: 23px;
 }
 
 .Nav ul {
@@ -12,6 +18,7 @@
   margin:40px
 }
 .Nav {
-  background-color: #e4a736e9;
   display: flex;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
 }

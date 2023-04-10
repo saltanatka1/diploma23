@@ -1,0 +1,29 @@
+.CategoryList {
+  background-color:  #fff;
+  margin: 10px;
+  width: 300px;
+}
+
+.CategoryList  h3{
+  font-family: Roboto,sans-serif;
+  text-align: center;
+  color: rgb(34, 34, 34);
+}
+
+
+.CategoryList ul {
+  list-style-type: none;
+}
+.CategoryList ul li a {
+  text-decoration: none;
+  margin :10px;
+  color: rgba(21, 20, 20, 0.792);
+  font-family: Roboto,sans-serif;
+  font-size: 16px;
+  border-bottom: 1px solid #000;
+}
+
+.CategoryList ul li a:hover {
+  color: rgb(34, 34, 34);
+  border-left:2px solid red;
+}
