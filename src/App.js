@@ -7,8 +7,31 @@ import Delivery from "./pages/Delivery";
 import History from "./pages/History";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
+import { createContext, useEffect, useState } from "react";
+import { categoryCollection } from "./firebase";
+
+
+export const AppContext = createContext({
+  categories:[],
+});
+
 
 function App() {
+  const [categories,setCategories] = useState([]);
+  
+
+  useEffect(() =>{//выполнить только однажды
+    return getDocs(categoryCollection)//получать категории
+      .then (({docs})=>{//когда категоии загрузились
+        setCategories(//обновить состаяние
+          docs.map(doc =>({//новый массив
+            ...doc.data(),//из свойств name,stug
+            id: doc.id// и свойства id
+          }))
+        )
+      });
+  })
+  
   return (
     <div className="App">
 
