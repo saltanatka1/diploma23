@@ -9,6 +9,7 @@ import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
 import { categoryCollection } from "./firebase";
+import { getDoc } from "firebase/firestore";
 
 
 export const AppContext = createContext({
@@ -21,7 +22,7 @@ function App() {
   
 
   useEffect(() =>{//выполнить только однажды
-    return getDocs(categoryCollection)//получать категории
+    return getDoc(categoryCollection)//получать категории
       .then (({docs})=>{//когда категоии загрузились
         setCategories(//обновить состаяние
           docs.map(doc =>({//новый массив
@@ -34,7 +35,7 @@ function App() {
   
   return (
     <div className="App">
-
+      <AppContext.Provider value={{categories}}>
       <Layout>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -46,6 +47,8 @@ function App() {
           <Route path="*" element={<NotFound/>} />
         </Routes>
       </Layout>
+    </AppContext.Provider>
+
     </div>
   );
 }
