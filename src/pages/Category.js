@@ -22,7 +22,7 @@ export default function Category() {
     return <NotFound/>
   }
   
-  return(
+  return( 
     <div className="Category">
     <h1>{category.name}</h1>
     </div>
