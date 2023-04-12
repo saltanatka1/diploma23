@@ -9,7 +9,7 @@ import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
 import { categoryCollection } from "./firebase";
-import { getDoc } from "firebase/firestore";
+import { getDocs } from "firebase/firestore";
 
 
 export const AppContext = createContext({
@@ -22,7 +22,7 @@ function App() {
   
 
   useEffect(() =>{//выполнить только однажды
-    return getDoc(categoryCollection)//получать категории
+    getDocs(categoryCollection)//получать категории
       .then (({docs})=>{//когда категоии загрузились
         setCategories(//обновить состаяние
           docs.map(doc =>({//новый массив
