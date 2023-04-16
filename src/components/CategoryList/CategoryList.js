@@ -7,6 +7,7 @@ export default function CategoryList() {
 
   const output = categories.map((category) => (
     <li key={category.id}>
+      <img src={category.icon} alt={category.name} className="icon" />
       <NavLink to={"/categories/" + category.slug}>{category.name}</NavLink>
     </li>
   ));

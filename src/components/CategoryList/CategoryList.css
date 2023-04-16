@@ -9,7 +9,6 @@
 
 .CategoryList  h3{
   font-family: Roboto,sans-serif;
-  text-align: center;
   color: rgb(34, 34, 34);
   font-size: 26px;
 }
@@ -30,4 +29,18 @@
 .CategoryList ul li a:hover {
   color: rgb(34, 34, 34);
   border-bottom:2px solid red;
+}
+
+.CategoryList ul li{
+  border-bottom: 1px solid #000;
+  margin :10px;
+}
+
+.CategoryList .icon {
+  max-width: 25px;
+
+}
+
+.CategoryList ul li:hover {
+  border-bottom:2px solid rgb(245, 7, 7);
 }
