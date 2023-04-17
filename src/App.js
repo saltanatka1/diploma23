@@ -11,6 +11,8 @@ import { createContext, useEffect, useState } from "react";
 import { categoryCollection, productsCollection } from "./firebase";
 import { getDocs } from "firebase/firestore";
 import Product from "./pages/Product";
+import CartLink from "./components/CartLink/CartLink";
+import Cart from "./pages/Cart";
 
 export const AppContext = createContext({
   categories: [],
@@ -66,6 +68,7 @@ function App() {
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="/products/:slug" element={<Product />} />
+            <Route path="/cart/" element={<Cart />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
