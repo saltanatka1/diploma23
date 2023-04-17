@@ -8,17 +8,22 @@ import History from "./pages/History";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
-import { categoryCollection,productsCollection } from "./firebase";
+import { categoryCollection, productsCollection } from "./firebase";
 import { getDocs } from "firebase/firestore";
 import Product from "./pages/Product";
 
 export const AppContext = createContext({
   categories: [],
+  products: [],
+  //контекст для корзины
+  cart: {},
+  setCart: () => {},
 });
 
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState({});
 
   useEffect(() => {
     //выполнить только однажды
@@ -35,7 +40,7 @@ function App() {
         );
       });
 
-      getDocs(productsCollection) //получать категории
+    getDocs(productsCollection) //получать категории
       .then(({ docs }) => {
         //когда категоии загрузились
         setProducts(
@@ -51,7 +56,7 @@ function App() {
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories,products }}>
+      <AppContext.Provider value={{ categories, products, cart, setCart }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -60,7 +65,7 @@ function App() {
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/categories/:slug" element={<Category />} />
-            <Route path="/products/:slug" element={<Product/>} />
+            <Route path="/products/:slug" element={<Product />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
