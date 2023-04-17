@@ -1,0 +1,17 @@
+.Product img {
+  max-width: 300px;
+}
+.Product p {
+  font-size: 18px;
+}
+.Product span {
+  font-weight: 700;
+}
+
+.Product {
+  display: flex;
+  justify-content: space-between;
+}
+.Product .descriptionContent {
+  margin: 90px 20px;
+}
