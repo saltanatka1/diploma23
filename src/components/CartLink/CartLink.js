@@ -13,7 +13,7 @@ export default function CartLink (){
   return (
     <div className="CartLink">
       <NavLink to="/cart">
-        Cart ({ total})
+        <img src="https://www.svgrepo.com/show/80543/shopping-cart-outline.svg" alt="icon" className="cartIcon"/> <span>({ total})</span>
       </NavLink>
     </div>
   );
