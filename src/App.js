@@ -11,8 +11,8 @@ import { createContext, useEffect, useState } from "react";
 import { categoryCollection, productsCollection } from "./firebase";
 import { getDocs } from "firebase/firestore";
 import Product from "./pages/Product";
-import CartLink from "./components/CartLink/CartLink";
 import Cart from "./pages/Cart";
+import ThankYou from "./pages/ThankYou";
 
 export const AppContext = createContext({
   categories: [],
@@ -25,7 +25,13 @@ export const AppContext = createContext({
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useState(() => {
+    return JSON.parse(localStorage.getItem('cart'))||{};
+  });
+
+  useEffect(() => {
+    localStorage.setItem('cart',JSON.stringify(cart));
+  },[cart]);
 
   useEffect(() => {
     //выполнить только однажды
@@ -69,6 +75,7 @@ function App() {
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="/products/:slug" element={<Product />} />
             <Route path="/cart/" element={<Cart />} />
+            <Route path="/thank-you" element={<ThankYou/>}/>
 
             <Route path="*" element={<NotFound />} />
           </Routes>
