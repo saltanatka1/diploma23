@@ -1,10 +1,25 @@
-import { signIn } from "../../firebase";
-import "./Auth.css";
+import { useContext } from "react";
+import { logIn, logOut } from "../../firebase";
+import { AppContext } from "../../App";
+import { Link } from "react-router-dom";
 
-export default function Auth (){
+export default function Auth() {
+  const { user } = useContext(AppContext);
+
+
   return (
     <div className="Auth">
-      <button onClick={signIn}>Sign in</button>
+      {user ? (
+        <span>
+          Hello <Link className="name" to="/orders">{user.displayName}</Link>!
+          <button onClick={logOut}>Sign out</button>
+        </span>
+      ) : (
+        <span>
+          Hello guest!
+          <button onClick={logIn}>Sign in</button>
+        </span>
+      )}
     </div>
-  )
+  );
 }
