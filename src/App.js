@@ -9,10 +9,10 @@ import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 
 import { createContext, useEffect, useState } from "react";
-import { getDocs } from "firebase/firestore/lite";
+import { getDocs } from "firebase/firestore";
 import {
-  categoryCollection,
   onAuthChange,
+  onCategoriesLoad,
   ordersCollection,
   productsCollection,
 } from "./firebase";
@@ -50,19 +50,7 @@ function App() {
   }, [cart]);
 
   useEffect(() => {
-    // выполнить только однажды
-    getDocs(categoryCollection) // получить категории
-      .then(({ docs }) => {
-        // когда категории загрузились
-        setCategories(
-          // обновить состояние
-          docs.map((doc) => ({
-            // новый массив
-            ...doc.data(), // из свойств name, slug
-            id: doc.id, // и свойства id
-          }))
-        );
-      });
+    onCategoriesLoad(setCategories);
 
     getDocs(productsCollection) // получить категории
       .then(({ docs }) => {
@@ -90,6 +78,10 @@ function App() {
       });
 
     onAuthChange((user) => {
+      if (user) {
+        user.isAdmin = user.email === "egizbaevasaltanat05@gmail.com";
+      }
+
       setUser(user);
     });
   }, []);

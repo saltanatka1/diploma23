@@ -1,42 +1,40 @@
-import { addDoc } from "firebase/firestore/lite";
-import { useState } from "react";
+import React, { useState } from "react";
+import "./AddCategory.css";
+import { addDoc } from "firebase/firestore";
 import { categoryCollection } from "../../firebase";
 
-function AddCategory() {
+export default function AddCategory() {
   const [category, setCategory] = useState("");
 
   function onChangeCategory(event) {
-    return setCategory(event.target.value);
+    setCategory(event.target.value);
   }
 
-  function onAddCategory(params) {
+  function onAddCategory() {
     const name = category.trim();
-
     if (name.length <= 5) {
       alert(
-        "Please provide a category name with minimum length of 5 characters"
+        "Plase provide a category name with minimum length of 5 characters"
       );
+      return;
     }
     addDoc(categoryCollection, {
-      name: category.trim(),
+      name: name,
       slug: category.trim().replace(" ", "-").toLocaleLowerCase(),
     }).then(() => {
       setCategory("");
     });
   }
-
   return (
     <div className="AddCategory">
       <input
         size="15"
         type="text"
         value={category}
-        placeholder="Category name "
-        onchange={onChangeCategory}
+        placeholder="Category Name"
+        onChange={onChangeCategory}
       />
       <button onClick={onAddCategory}>+</button>
     </div>
   );
 }
-
-export default AddCategory;
