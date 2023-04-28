@@ -1,4 +1,18 @@
-.Auth .signIn {
-  max-width:40px;
-  margin-top: 30px;
-}
+.Auth span button {
+    background-color: #081f2d;
+    border-radius: 29px;
+    border: 1px solid #081f2d;
+    color: white;
+    font-size: 15px;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+.Auth span button:hover {
+    background-color: white;
+    color: #081f2d;
+    border-color: #081f2d;
+    transition: 0.3s;
+  }
+
