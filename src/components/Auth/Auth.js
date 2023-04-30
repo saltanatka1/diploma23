@@ -12,12 +12,12 @@ export default function Auth() {
     <div className="Auth">
       {user ? (
         <span>
-        <Link to="/orders">{user.displayName}</Link>!
-          <img src="https://w7.pngwing.com/pngs/505/761/png-transparent-login-computer-icons-avatar-icon-monochrome-black-silhouette.png" ail="icon sign in" onClick={logOut} className="sign"/>
+        <Link to="/orders">{user.displayName}</Link>
+          <img src="https://cdn.onlinewebfonts.com/svg/img_415067.png" alt="icon sign in" onClick={logOut} className="sign"/>
         </span>
       ) : (
         <span>
-          <img src="https://w7.pngwing.com/pngs/505/761/png-transparent-login-computer-icons-avatar-icon-monochrome-black-silhouette.png" alt="icon sign out"onClick={logIn} className="sign"/>
+          <img src="https://cdn.onlinewebfonts.com/svg/img_415067.png" alt="icon sign out"onClick={logIn} className="sign"/>
         </span>
       )}
     </div>

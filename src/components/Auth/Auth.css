@@ -1,3 +1,11 @@
 .Auth span .sign {
-  max-width:50px;
+  max-width:55px;
+  margin-top: 20px;
+}
+
+.Auth span a {
+  text-decoration: none;
+  color:black;
+  margin: 0;
+  padding: 0;
 }
