@@ -24,7 +24,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 // Инициализация базы данных
-const db = getFirestore(app);
+export const db = getFirestore(app);
 const auth = getAuth(app);
 
 // Получение списка категорий (коллекции документов)
@@ -38,6 +38,24 @@ export const logOut = () => signOut(auth);
 export const onAuthChange = (callback) => onAuthStateChanged(auth, callback);
 export const onCategoriesLoad = (callback) =>
   onSnapshot(categoryCollection, (snapshot) =>
+    callback(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }))
+    )
+  );
+  export const onProductsLoad = (callback) =>
+  onSnapshot(productsCollection, (snapshot) =>
+    callback(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }))
+    )
+  );
+  export const onOrdersLoad = (callback) =>
+  onSnapshot(ordersCollection, (snapshot) =>
     callback(
       snapshot.docs.map((doc) => ({
         id: doc.id,
