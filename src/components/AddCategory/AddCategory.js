@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./AddCategory.css";
 import { addDoc } from "firebase/firestore";
 import { categoryCollection } from "../../firebase";
+import { AppContext } from "../../App";
 
 export default function AddCategory() {
+  const {user} = useContext(AppContext);
   const [category, setCategory] = useState("");
+
+  if (!user || !user.isAdmin){
+    return null;
+  }
 
   function onChangeCategory(event) {
     setCategory(event.target.value);
@@ -20,7 +26,7 @@ export default function AddCategory() {
     }
     addDoc(categoryCollection, {
       name: name,
-      slug: category.trim().replace(" ", "-").toLocaleLowerCase(),
+      slug: category.trim().replaceAll(" ", "-").toLocaleLowerCase(),
     }).then(() => {
       setCategory("");
     });
