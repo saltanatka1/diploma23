@@ -8,12 +8,12 @@ export default function CartLink (){
 
   //
   const total = Object.values(cart).reduce(
-    (acc,num) => acc +num, 0);
+    (acc,num) => acc + num, 0);
 
   return (
     <div className="CartLink">
       <NavLink to="/cart">
-        <img src="https://www.svgrepo.com/show/80543/shopping-cart-outline.svg" alt="icon" className="cartIcon"/> <span>({ total})</span>
+        <img src="https://www.svgrepo.com/show/80543/shopping-cart-outline.svg" alt="icon" className="cartIcon"/> <span className="total">{ total}</span>
       </NavLink>
     </div>
   );
