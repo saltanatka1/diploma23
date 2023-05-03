@@ -1,7 +1,7 @@
 function HomeDisplay() {
   return (
     <div className="HomeDisplay">
-      <section>
+      <section className="saima">
         <h1>SAIMA etno-shop</h1>
         <p>
           Welcome to SAIMA, your one-stop online destination for exquisite
@@ -10,14 +10,14 @@ function HomeDisplay() {
           collection of traditional garments and unique decor items.
         </p>
       </section>
-      <section>       
+      <section className="style">       
       <h1>Kyrgyz style </h1>
         <img src="https://fsd.multiurok.ru/html/2020/02/07/s_5e3d722a394d9/1345266_4.jpeg" alt="kyrgyz clothes" />
         <img src="https://gdb.rferl.org/3D2DFAE2-9C15-485B-BE65-0C01CA95C977_w1080_h608_s.jpg" alt="kyrgyz clothes" />
         <img src="https://img-fotki.yandex.ru/get/3202/194398330.f1/0_175655_770a8fea_XL.jpg" alt="kyrgyz clothes" />
         </section>
 
-        <section>
+        <section className="culture">
           <h1>SAIMA in Kyrgyz culture</h1>
           <p>
             At SAIMA, we pride ourselves on offering a wide range of products
