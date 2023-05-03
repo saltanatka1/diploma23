@@ -1,0 +1,5 @@
+.FooterDisplay {
+  background-color: #DF9E26;
+  display:flex;
+  justify-content: space-around;
+}
