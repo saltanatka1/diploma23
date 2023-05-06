@@ -15,9 +15,6 @@ export default function Nav() {
           <NavLink to="/contacts">Contacts</NavLink>
         </li>
         <li className="NavItem">
-          <NavLink to="/history">History</NavLink>
-        </li>
-        <li className="NavItem">
           <NavLink to="/delivery">Delivery</NavLink>
         </li>
       </ul>
