@@ -12,9 +12,12 @@ function HomeDisplay() {
       </section>
       <section className="style">       
       <h1>Kyrgyz style </h1>
-        <img src="https://fsd.multiurok.ru/html/2020/02/07/s_5e3d722a394d9/1345266_4.jpeg" alt="kyrgyz clothes" />
-        <img src="https://gdb.rferl.org/3D2DFAE2-9C15-485B-BE65-0C01CA95C977_w1080_h608_s.jpg" alt="kyrgyz clothes" />
-        <img src="https://img-fotki.yandex.ru/get/3202/194398330.f1/0_175655_770a8fea_XL.jpg" alt="kyrgyz clothes" />
+      <img src="https://i.pinimg.com/originals/c6/77/82/c67782dd8034f501fc5f1145674b1042.jpg" alt="kyrgyz girl" />
+      <img src="https://i.pinimg.com/originals/d4/42/bd/d442bda392008e59439664ce7a75057d.jpg" alt="kazakh girl" />
+      <img src="https://i.pinimg.com/originals/45/7d/3e/457d3eba5c95a9de9cd88ddea4bc8cd1.jpg" alt="beatiful girl" />
+
+
+      
         </section>
 
         <section className="culture">
