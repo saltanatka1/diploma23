@@ -1,33 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
 
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
-
-.btn{
-
-font-family: Roboto, sans-serif;
-font-weight: 0;
-font-size: 14px;
-color: #fff;
-background-color: #DF9E26;
-padding: 10px 30px;
-border: 2px solid #DF9E26;
-box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-border-radius: 0px 50px;
-transition : 1000ms;
-transform: translateY(0);
-display: flex;
-flex-direction: row;
-align-items: center;
-cursor: pointer;
+.btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #111112;
+  background: linear-gradient(190deg, #0066cc 50%, #c500cc 100%);
+  padding: 10px 30px;
+  border: solid #0066cc 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border-radius: 1px;
+  transition: 1753ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-.btn:hover{
-
-transition : 1000ms;
-padding: 10px 50px;
-transform : translateY(-0px);
-background-color: #fff;
-color: #DF9E26;
-border: solid 2px #DF9E26;
+.btn:hover {
+  transition: 1753ms;
+  padding: 10px 0px;
+  transform: translateY(-0px);
+  background: linear-gradient(190deg, #0066cc 50%, #c500cc 100%);
+  color: #0c0c0d;
+  border: solid 3px #b8c2cc;
+}
+.AddToCart {
+  display: flex;
+}
+.total {
+  padding: 3px;
+  color: #0066cc;
+  border-bottom: red;
 }
 
+.icon-btn {
+  width: 25px;
+  margin-left: 3px;
+  margin-right: 3px;
+  flex-direction: row;
+}
