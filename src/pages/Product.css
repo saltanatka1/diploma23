@@ -1,17 +1,21 @@
-.Product img {
-  max-width: 300px;
-}
-.Product p {
-  font-size: 18px;
-}
-.Product span {
-  font-weight: 700;
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 40vw;
 }
 
-.Product {
-  display: flex;
-  justify-content: space-between;
+.descriptionHeader{
+  flex-direction: column;
 }
-.Product .descriptionContent {
-  margin: 90px 20px;
+.descriptionHeader img {
+  max-width: 200px;
+}
+
+.descriptionContent {
+  margin: 20%;
+  flex-direction: column;
+}
+.descriptionContent span {
+  padding: 10px;
+  border: 1px solid #0000006b;
 }
