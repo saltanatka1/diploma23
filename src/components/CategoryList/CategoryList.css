@@ -7,10 +7,12 @@
   justify-content: space-between;
 }
 
-.CategoryList  h3{
+.CategoryList  h2{
   font-family: Roboto,sans-serif;
   color: rgb(34, 34, 34);
   font-size: 26px;
+  margin-left: 45px;
+  margin-top: 40px;
 }
 
 
@@ -37,5 +39,5 @@
 }
 
 .CategoryList ul li:hover {
-  border-bottom:2px solid rgba(85, 80, 80, 0.605);
+  
 }
