@@ -4,7 +4,7 @@
   "aside main"
   "footer footer";
   grid-template-columns: 1fr 3fr;
-  max-width: 1200px;
+  max-width: 1420px;
   margin: 0 auto;
 }
 
