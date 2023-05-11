@@ -1,4 +1,3 @@
-
 import "./HomeDisplay.css";
 
 function HomeDisplay() {
@@ -16,7 +15,7 @@ function HomeDisplay() {
       <div className="blank"> </div>
       <div className="conatiner second">
         <h1>Kyrgyz style </h1>
-        
+        <div className="items">
           <div className="item">
             <img
               className="img img-first"
@@ -38,7 +37,14 @@ function HomeDisplay() {
               alt="beatiful girl"
             />
           </div>
-        
+          <div className="item">
+            <img
+              className="img img-third"
+              src="https://i.pinimg.com/originals/fb/f3/4b/fbf34b4cc190fa9bc8e657cdbba0d5a0.jpg"
+              alt="girl"
+            />
+          </div>
+        </div>
       </div>
       <div className="blank"></div>
       <div className="container third">
