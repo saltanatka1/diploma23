@@ -6,17 +6,18 @@ export default function AddToCart({ product }) {
   const { cart, setCart } = useContext(AppContext);
 
   function onAddToCartClick() {
-    const qty =cart[product.id] ? cart[product.id]+ 1 : 1;
+    const qty = cart[product.id] ? cart[product.id] + 1 : 1;
     setCart({
       ...cart, //положить текущее соержание корзинки
-      [product.id]:qty, //добавить текущий товар
+      [product.id]: qty, //добавить текущий товар
     });
   }
   return (
     <div className="AddToCart">
-      {cart[product.id] ? cart[product.id] : 0}
-      <button className="btn" onClick={onAddToCartClick}>Add to cart</button>
+      <button className="btn" onClick={onAddToCartClick}>
+        Add to cart <img src="https://cdn-icons-png.flaticon.com/512/5465/5465858.png" alt="icon-btn" className="icon-btn"/>
+      </button>
+      <div className="total"> {cart[product.id] ? cart[product.id] : 0}</div>
     </div>
   );
 }
-
