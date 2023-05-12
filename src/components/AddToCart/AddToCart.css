@@ -5,13 +5,13 @@
   font-weight: 500;
   font-size: 17px;
   color: #111112;
-  background: linear-gradient(190deg, #0066cc 50%, #c500cc 100%);
+  background: linear-gradient(170deg,#2b87e4  50%, #c500cc 100%);
   padding: 10px 30px;
   border: solid #0066cc 3px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-  border-radius: 1px;
+  border-radius: 40px;
   transition: 1753ms;
   transform: translateY(0);
   display: flex;
@@ -25,7 +25,7 @@
   transition: 1753ms;
   padding: 10px 0px;
   transform: translateY(-0px);
-  background: linear-gradient(190deg, #0066cc 50%, #c500cc 100%);
+  background: linear-gradient(170deg, #2b87e4 50%, #c500cc 100%);
   color: #0c0c0d;
   border: solid 3px #b8c2cc;
 }
