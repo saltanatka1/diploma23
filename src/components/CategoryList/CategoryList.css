@@ -38,6 +38,30 @@
 
 }
 
-.CategoryList ul li:hover {
-  
+@media (max-width:860px){
+  .CategoryList ul li a {
+    display: none;
+    }
+    .CategoryList {
+    width:150px;
+    }
+    .CategoryList  h2{
+      font-size: 26px;
+      margin-left: 10px;
+      margin-top: 40px;
+    }
+}
+
+@media (max-width:550px) {
+  .CategoryList ul li a {
+  display: none;
+  }
+  .CategoryList {
+  width:100px;
+  }
+  .CategoryList  h2{
+    font-size: 26px;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
 }
