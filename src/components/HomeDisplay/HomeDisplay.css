@@ -61,3 +61,20 @@ p{
 	flex-direction: row;
 	gap: 1.6em;
 }
+
+
+@media (max-width:860px) {
+	.item .img {
+		width: 200px;
+		height: 200px;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width:660px) {
+	.item .img {
+		width: 160px;
+		height: 160px;
+		margin-top: 10px;
+	}
+}
