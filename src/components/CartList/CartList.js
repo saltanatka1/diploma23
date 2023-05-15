@@ -4,7 +4,7 @@ import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
 
 export default function CartList() {
-  //получить спсиок товров и корзинку
+  // получить список товаров и корзинку
   const { products, cart, setCart } = useContext(AppContext);
 
   function onQuantityChange(product, qty) {
@@ -14,37 +14,36 @@ export default function CartList() {
     });
   }
 
-function onItemRemove (product){
-  const newCart={...cart};
-  delete newCart[product.id];
-  setCart(newCart)
-;}
+  function onItemRemove(product) {
+    const newCart = { ...cart };
+    delete newCart[product.id];
+    setCart(newCart);
+  }
 
-  //получить только Ид товаров в корзинке
+  // получить только ИД товаров в корзинке
   const productIds = Object.keys(cart);
 
   //чтобы вывести пройтись по товарам
   const output = products
-    //удалить все товары которые не в корзине
+    // удалить все товары которые не в корзине
     .filter((product) => productIds.includes(product.id))
-    //вывести товары и их кол-во
+    // вывести  товары и их кол-во
     .map((product) => (
       <div className="CartItem" key={product.id}>
-        <img src={product.picture} alt={product.id} />
-        <Link to={"/product/" + product.slug}>{product.name}</Link>
+        <img src={product.picture} alt={product.name} />
+        <Link to={"/product/" + product.slug} className="link-cart">{product.name}</Link>
         <input
           type="number"
+          className="counter"
           value={cart[product.id]}
           min={1}
-          onChange={(event) =>
-            onQuantityChange(product, +event.target.value)
-          }
+          onChange={(event) => onQuantityChange(product, +event.target.value)}
         />
-        {cart[product.id]}
         <span>{cart[product.id] * product.price} $</span>
-        <button onClick={() => onItemRemove(product)}>Remove</button>
+        <button onClick={() => onItemRemove(product)} className="remove">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Icons8_flat_delete_generic.svg" alt ="remove" />
+        </button>
       </div>
     ));
-
   return <div className="CartList">{output}</div>;
 }
