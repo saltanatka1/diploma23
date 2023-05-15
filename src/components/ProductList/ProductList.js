@@ -19,7 +19,7 @@ export default function ProductList({ category }) {
           {product.name}
         </NavLink>
         <div className="add">
-          <span>{product.price} som</span>
+          <span>{product.price} $</span>
           <AddToCart product={product}  />
         </div>
         <div />
