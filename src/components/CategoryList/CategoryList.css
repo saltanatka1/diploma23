@@ -1,5 +1,5 @@
 .CategoryList {
-  background-color:  #fff;
+  background-color: #fff;
   margin: 10px;
   width: 300px;
   display: flex;
@@ -7,61 +7,64 @@
   justify-content: space-between;
 }
 
-.CategoryList  h2{
-  font-family: Roboto,sans-serif;
+.CategoryList h2 {
+  font-family: Roboto, sans-serif;
   color: rgb(34, 34, 34);
   font-size: 26px;
   margin-left: 45px;
   margin-top: 40px;
 }
 
-
 .CategoryList ul {
   list-style-type: none;
 }
 .CategoryList ul li a {
   text-decoration: none;
-  margin :10px;
+  margin: 10px;
   color: rgba(21, 20, 20, 0.792);
-  font-family: Roboto,sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 20px;
 }
 
-
-.CategoryList ul li{
+.CategoryList ul li {
   border-bottom: 1px solid #000;
-  margin :10px;
+  margin: 10px;
 }
 
 .CategoryList .icon {
   max-width: 25px;
-
 }
 
-@media (max-width:860px){
+@media (max-width: 860px) {
   .CategoryList ul li a span {
     display: none;
-    }
-    .CategoryList {
-    width:150px;
-    }
-    .CategoryList  h2{
-      font-size: 26px;
-      margin-left: 10px;
-      margin-top: 40px;
-    }
-}
-
-@media (max-width:550px) {
-  .CategoryList ul li a span {
-  display: none;
   }
   .CategoryList {
-  width:100px;
+    width: 150px;
   }
-  .CategoryList  h2{
+  .CategoryList h2 {
     font-size: 26px;
     margin-left: 10px;
     margin-top: 40px;
+  }
+  .CategoryList ul li {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .CategoryList ul li a span {
+    display: none;
+  }
+  .CategoryList {
+    width: 100px;
+  }
+  .CategoryList h2 {
+    font-size: 26px;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+  .CategoryList ul li {
+    border-bottom: none;
   }
 }
