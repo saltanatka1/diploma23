@@ -13,25 +13,16 @@ export default function ProductList({ category }) {
     .filter((product) => product.category === category.id)
     .map((product) => (
       <div key={product.id} className="productItem">
-        <div className="container">
-          <div className="card">
-            <div className="imgBx">
-              <img src={product.picture} alt={product.name} />
-            </div>
-            <div className="contentBx">
-              <h2>{product.name}</h2>
-              <NavLink to={"/products/" + product.slug} className="link">
-                {product.name}
-              </NavLink>
-              <div className="price">
-                <span>{product.price} $</span>
-                <AddToCart product={product} className="add" />
-              </div>
-            </div>
-          </div>
-          <div />
+        <div className="img-content"><img src={product.picture} alt={product.name} /></div>
+        <h2>{product.name}</h2>
+        <NavLink to={"/products/" + product.slug} >
+          {product.name}
+        </NavLink>
+        <div className="add">
+          <span>{product.price} som</span>
+          <AddToCart product={product}  />
         </div>
-
+        <div />
         <DeleteProduct product={product} />
       </div>
     ));
