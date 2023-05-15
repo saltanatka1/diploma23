@@ -15,9 +15,13 @@ export default function AddToCart({ product }) {
   return (
     <div className="AddToCart">
       <button className="btn" onClick={onAddToCartClick}>
-        Add to cart <img src="https://cdn-icons-png.flaticon.com/512/5465/5465858.png" alt="icon-btn" className="icon-btn"/>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5465/5465858.png"
+          alt="icon-btn"
+          className="icon-btn"
+        />
+        <div className="total"> {cart[product.id] ? cart[product.id] : 0}</div>
       </button>
-      <div className="total"> {cart[product.id] ? cart[product.id] : 0}</div>
     </div>
   );
 }
