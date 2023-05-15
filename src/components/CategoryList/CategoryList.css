@@ -39,7 +39,7 @@
 }
 
 @media (max-width:860px){
-  .CategoryList ul li a {
+  .CategoryList ul li a span {
     display: none;
     }
     .CategoryList {
@@ -53,7 +53,7 @@
 }
 
 @media (max-width:550px) {
-  .CategoryList ul li a {
+  .CategoryList ul li a span {
   display: none;
   }
   .CategoryList {
