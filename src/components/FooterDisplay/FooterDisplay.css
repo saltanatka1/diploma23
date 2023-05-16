@@ -3,4 +3,24 @@
   display:flex;
   justify-content: space-around;
   margin-top: 40px;
+  padding: 10px;
+}
+
+.FooterDisplay .Logo img {
+  width:200px;
+
+}
+
+.FooterDisplay .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu .Nav ul  {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu .Nav ul li {
+  padding: 10px
 }
