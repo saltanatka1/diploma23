@@ -23,10 +23,10 @@ export default function OrderList() {
 
     return (
       <div key={order.id} className="Order">
-        <div>Name: {order.name}</div>
-        <div>Phone: {order.phone}</div>
-        <div>Address: {order.address}</div>
-        <div>Cart: {cartOutput}</div>
+        <div className="order-form"><strong>Name:</strong> {order.name}</div>
+        <div className="order-form"><strong>Phone:</strong> {order.phone}</div>
+        <div className="order-form"><strong>Address:</strong> {order.address}</div>
+        <div className="order-form"><strong>Cart:</strong> {cartOutput}</div>
       </div>
     );
   })
