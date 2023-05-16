@@ -1,4 +1,21 @@
-.OrderList img {
-  max-width: 20px;
+.Order img {
+  max-width: 10%;
   margin: 3px;
+  box-shadow: 10px 10px 10px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 50%;
 }
+
+.Order {
+  border: 1px solid transparent;
+  margin: 20px 5px;
+  width: 50%;
+  padding: 10px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+  margin: 20px 5px;
+}
+
+.Order .order-form {
+  padding: 5px;
+}
+
+
