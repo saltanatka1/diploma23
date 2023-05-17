@@ -13,7 +13,7 @@ function HomeDisplay() {
             collection of traditional garments and unique decor items.
           </p>
         </div>
-      </div>
+      
 
       <div className="blank"> </div>
       <div className="content second">
@@ -50,6 +50,7 @@ function HomeDisplay() {
         </p>
       </div>
       <div className="blank"></div>
+      </div>
     </div>
   );
 }
