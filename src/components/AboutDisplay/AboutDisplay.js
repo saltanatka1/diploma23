@@ -6,7 +6,7 @@ export default function AboutDisplay() {
       <div id="parallax-world-of-ugg">
         <section>
           <div class="title">
-            <h3>Let's do some</h3>
+            <h3>Let's serves</h3>
             <h1>About SAIMA</h1>
           </div>
         </section>
