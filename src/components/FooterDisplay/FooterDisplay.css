@@ -1,26 +1,61 @@
 .FooterDisplay {
-  background-color: #D4D3D3;
-  display:flex;
+  background-color: #d4d3d3;
+  display: flex;
   justify-content: space-around;
-  margin-top: 40px;
-  padding: 10px;
+  margin-top: 50px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .FooterDisplay .Logo img {
-  width:200px;
-
+  width: 200px;
 }
 
 .FooterDisplay .menu {
   display: flex;
   flex-direction: column;
+  
 }
-
-.menu .Nav ul  {
+.shop-name {
+  display: flex;
+  flex-direction: column;
+}
+.shop-name h3 {
+  text-align: center;
+}
+.menu .Nav ul {
   display: flex;
   flex-direction: column;
 }
 
 .menu .Nav ul li {
-  padding: 10px
+  padding: 10px;
+}
+.contact-about {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-about p {
+  margin: 0;
+}
+.contacts h3 {
+  text-align: center;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+}
+.contacts .social-network a {
+  cursor: pointer;
+  margin: 5px;
+}
+.contacts .social-network a img {
+  width: 40px;
+}
+@media (max-width: 767px) {
+  .FooterDisplay .Logo img {
+    width: 60%;
+  }
 }
