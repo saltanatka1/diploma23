@@ -24,6 +24,7 @@ export default function AboutDisplay() {
       <div className="container">
         <section className="section">
           <div className="image-box" data-reveal="left">
+          
             <img
               src="https://i.pinimg.com/originals/03/85/8d/03858d665ebd7a768520c92b5d2407da.jpg"
               alt=""
@@ -115,4 +116,5 @@ export default function AboutDisplay() {
       </div>
     </div>
   );
+  
 }
