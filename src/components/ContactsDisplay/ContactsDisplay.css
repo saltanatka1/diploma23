@@ -1,10 +1,9 @@
 .ContactsDisplay .map {
-  width:100%;
-  height:100%;
-  border:0;
+  width: 100%;
+  height: 100%;
+  border: 0;
   margin: 0 auto;
 }
-
 
 .ContactsDisplay .container {
   display: flex;
@@ -25,12 +24,11 @@
   font-size: 52px;
 }
 
-.image-contact{
+.image-contact {
   margin: auto;
 }
 .image-contact img {
-  width:80%;
-
+  width: 80%;
 }
 .contact p {
   width: 300px;
@@ -38,9 +36,15 @@
   padding: 10px;
 }
 
-.contact a{
+.contact a {
   text-decoration: none;
-  color:rgba(240, 248, 255, 0.925);
+  color: rgba(0, 0, 0, 0.925);
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3ms;
+}
+.contact a:hover {
+  box-shadow: 0 10px 5px -5px rgba(30, 129, 204, 0.2);
 }
 
 .location {
