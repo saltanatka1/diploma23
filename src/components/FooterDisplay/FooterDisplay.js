@@ -4,6 +4,9 @@ import Nav from "../Nav/Nav";
 import "./FooterDisplay.css";
 
 function FooterDisplay() {
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   return (
     <div className="FooterDisplay">
       <div className="container">
@@ -78,6 +81,12 @@ function FooterDisplay() {
               </Link>
             </div>
           </div>
+        </div>
+        <div className="GoUp">
+          <Link href="#" onClick={scrollToTop}>
+            <i class="fa-solid fa-arrow-up"></i>
+            <h3>GO UP</h3>
+          </Link>
         </div>
       </div>
     </div>
