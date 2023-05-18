@@ -1,0 +1,55 @@
+.ContactsDisplay .map {
+  width:100%;
+  height:100%;
+  border:0;
+  margin: 0 auto;
+}
+
+
+.ContactsDisplay .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactsDisplay .container .content {
+  display: flex;
+  margin: 20px;
+  height: 100vh;
+}
+
+.contact {
+  margin: auto;
+}
+.contact h1 {
+  text-align: center;
+  font-size: 52px;
+}
+
+.image-contact{
+  margin: auto;
+}
+.image-contact img {
+  width:80%;
+
+}
+.contact p {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.contact a{
+  text-decoration: none;
+  color:rgba(240, 248, 255, 0.925);
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.location h1 {
+  margin: 20px;
+  font-size: 52px;
+}
