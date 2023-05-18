@@ -4,52 +4,105 @@ function HomeDisplay() {
   return (
     <div className="HomeDisplay">
       <div className="container">
-        <div className="content">
-          <h1>SAIMA etno-shop</h1>
-          <p>
-            Welcome to SAIMA, your one-stop online destination for exquisite
-            Kyrgyz-style clothing and decorations. Immerse yourself in the rich
-            cultural heritage of Kyrgyzstan as you explore our extensive
-            collection of traditional garments and unique decor items.
-          </p>
+        <div id="parallax-world-of-ugg">
+          <section>
+            <div class="title">
+              <h3>Let's see</h3>
+              <h1>SAIMA etno-shop</h1>
+            </div>
+          </section>
+
+          <section>
+            <div class="parallax-one">
+              <h2>Etno shop Saima</h2>
+            </div>
+          </section>
+
+          <section>
+            <div class="block">
+              <p>
+                <span class="first-character sc">E</span>
+                tno-Shop Saima is a vibrant and culturally rich store that
+                celebrates the beauty and diversity of traditional ethnic crafts
+                and products. Located in a bustling urban area, Saima stands out
+                with its colorful and inviting storefront, showcasing an
+                extensive range of handmade items sourced from various regions
+                around the world.
+              </p>
+              <p class="line-break margin-top-10"></p>
+              <p class="margin-top-10">
+                Stepping into Etno-Shop Saima is like embarking on a global
+                journey, as each corner of the store is adorned with exquisite
+                artifacts, textiles, and accessories representing different
+                cultures. The carefully curated collection showcases the
+                craftsmanship, traditions, and stories of artisans from diverse
+                communities.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div class="parallax-two">
+              <h2>Kyrgyz style</h2>
+            </div>
+          </section>
+
+          <section>
+            <div class="block">
+              <p>
+                <span class="first-character ny">K</span>yrgyz style refers to
+                the cultural and artistic traditions of the Kyrgyz people, an
+                ethnic group primarily residing in Kyrgyzstan, a Central Asian
+                country with a rich history and nomadic heritage. Kyrgyz style
+                encompasses various aspects of their lifestyle, including
+                clothing, architecture, music, arts and crafts, and cuisine.
+              </p>
+              <p class="line-break margin-top-10"></p>
+              <p class="margin-top-10">
+                Clothing is an essential part of Kyrgyz style, reflecting the
+                nomadic heritage and harsh climate of the region. Traditional
+                Kyrgyz attire for both men and women includes a long robe-like
+                garment called a "chapan" or "jooluk" made from thick, warm
+                fabrics such as felt or wool. These robes often feature
+                intricate embroidery and bold patterns in vibrant colors,
+                representing the craftsmanship and aesthetics of the Kyrgyz
+                people.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div class="parallax-three">
+              <h2>SAIMA</h2>
+            </div>
+          </section>
+
+          <section>
+            <div class="block">
+              <p>
+                <span class="first-character atw">I</span>n addition to its
+                physical store, Etno-Shop Saima has an online presence, making
+                its unique collection accessible to a wider audience. The online
+                platform enables customers to explore the products, read about
+                their origins, and make purchases from the comfort of their own
+                homes. With secure packaging and efficient shipping, the store
+                ensures that these treasures reach customers around the world in
+                pristine condition.
+              </p>
+              <p class="line-break margin-top-10"></p>
+              <p class="margin-top-10">
+                Etno-Shop Saima stands as a testament to the beauty of cultural
+                diversity and the value of preserving traditional crafts. By
+                offering a space where people can connect with the rich heritage
+                of various cultures, the store creates a bridge between artisans
+                and appreciators of their work. Whether you're seeking a
+                distinctive gift or a piece of art that reflects the beauty of
+                cultural traditions, Etno-Shop Saima is the perfect destination
+                for a meaningful shopping experience.
+              </p>
+            </div>
+          </section>
         </div>
-      
-
-      <div className="blank"> </div>
-      <div className="content second">
-        <h1>Kyrgyz style </h1>
-        <div className="items">
-          <img
-            className="img img-first"
-            src="https://i.pinimg.com/originals/c6/77/82/c67782dd8034f501fc5f1145674b1042.jpg"
-            alt="kyrgyz girl"
-          />
-
-          <img
-            className="img img-second"
-            src="https://i.pinimg.com/originals/d4/42/bd/d442bda392008e59439664ce7a75057d.jpg"
-            alt="kazakh girl"
-          />
-
-          <img
-            className="img img-third"
-            src="https://i.pinimg.com/originals/86/17/aa/8617aad6ca0b2ddb49b4af9fd8ffed2e.jpg"
-            alt="beatiful girl"
-          />
-        </div>
-      </div>
-      <div className="blank"></div>
-      <div className="content third">
-        <h1>SAIMA in Kyrgyz culture</h1>
-        <p>
-          At SAIMA, we pride ourselves on offering a wide range of products that
-          showcase the beauty and craftsmanship of Kyrgyz culture. Whether
-          you're looking for a stylish outfit for a special occasion or
-          searching for authentic decorations to add a touch of elegance to your
-          home, our etno-shop has something to suit every taste and preference.
-        </p>
-      </div>
-      <div className="blank"></div>
       </div>
     </div>
   );
