@@ -4,6 +4,7 @@
   text-decoration: none;
   font-size: 18px;
   padding:10px;
+  transition: 0.3ms;
 }
 
 .Nav .NavItem a:hover {
