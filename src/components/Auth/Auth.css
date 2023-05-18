@@ -1,6 +1,7 @@
 .Auth span .sign {
   max-width:40px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .Auth span a {
