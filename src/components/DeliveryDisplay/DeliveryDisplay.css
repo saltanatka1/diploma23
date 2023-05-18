@@ -363,6 +363,7 @@
 .DeliveryDisplay .progress_inner {
   height: 200px;
   width: 700px;
+  margin: 0 auto;
 }
 .DeliveryDisplay .progress_inner #step-5:checked + div {
   width: 80%;
@@ -602,3 +603,4 @@
 .DeliveryDisplay .progress_inner input[type="radio"] {
   display: none;
 }
+
