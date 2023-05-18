@@ -1,8 +1,9 @@
+import ContactsDisplay from "../components/ContactsDisplay/ContactsDisplay";
+
 export default function Contacts (){
   return(
     <div className="Contacts">
-      <h1>Contacts</h1>
-      <p>This is the contacts page</p>
+      <ContactsDisplay/>
     </div>
   );
 }
