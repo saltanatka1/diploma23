@@ -7,6 +7,15 @@
   flex-wrap: wrap;
 }
 
+.FooterDisplay .container {
+  display: flex;
+}
+
+.FooterDisplay .container .content {
+  max-width: 400px;
+  margin: 40px;
+}
+
 .FooterDisplay .Logo img {
   width: 200px;
 }
@@ -14,9 +23,6 @@
 .FooterDisplay .menu {
   display: flex;
   flex-direction: column;
-}
-.FooterDisplay .content {
-  
 }
 .shop-name {
   display: flex;
@@ -29,11 +35,11 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding-top: 12px;
+
 }
 
 .menu .Nav ul li {
-  padding: 5px;
+  padding: 10px;
 }
 
 .menu .Nav ul li a {
@@ -45,7 +51,7 @@
 }
 
 .contact-about p {
-  margin: 0;
+  margin: 5px;
 }
 .contacts h3 {
   text-align: center;
@@ -67,6 +73,7 @@
   transform: scale(1);
   transition: box-shadow 0.5s, transform 0.5s;
   cursor: pointer;
+  padding-top: 20px;
 
 }
 @media (max-width: 767px) {
