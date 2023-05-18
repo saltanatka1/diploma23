@@ -17,7 +17,6 @@
 }
 .Drawer .backdrop {
   background-color: rgba(0, 0, 0, .3);
-
   position: fixed;
   top: 0;
   left: 0;
@@ -33,6 +32,24 @@
 .open .content {
   transform: translateX(0);
 }
+.Drawer .Nav .NavItem {
+  color:#000;
+  text-decoration: none;
+  font-size: 20px;
+  padding:20px;
+  transition: 0.3ms;
+}
+
+.Drawer .Nav {
+  display: flex;
+  flex-direction: column;
+}
+.Drawer .Nav .NavItem:hover {
+border: 1px solid #000;
+box-shadow: none;
+}
+
+
 
 @media (min-width: 550px) {
   .Drawer .backdrop {
