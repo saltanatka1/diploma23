@@ -14,6 +14,8 @@
 .FooterDisplay .menu {
   display: flex;
   flex-direction: column;
+}
+.FooterDisplay .content {
   
 }
 .shop-name {
@@ -26,10 +28,16 @@
 .menu .Nav ul {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding-top: 12px;
 }
 
 .menu .Nav ul li {
-  padding: 10px;
+  padding: 5px;
+}
+
+.menu .Nav ul li a {
+  font-size: 15px;
 }
 .contact-about {
   display: flex;
@@ -45,14 +53,21 @@
 .contacts {
   display: flex;
   flex-direction: column;
-
 }
 .contacts .social-network a {
   cursor: pointer;
   margin: 5px;
+
+}
+.contacts .social-network a img:hover {
+  transform: scale(1.2);
 }
 .contacts .social-network a img {
   width: 40px;
+  transform: scale(1);
+  transition: box-shadow 0.5s, transform 0.5s;
+  cursor: pointer;
+
 }
 @media (max-width: 767px) {
   .FooterDisplay .Logo img {
