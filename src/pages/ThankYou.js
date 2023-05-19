@@ -1,8 +1,8 @@
 import "./ThankYou.css";
 export default function ThankYou() {
-  // setTimeout(() => {
-  //   window.location.href = "/";
-  // }, 2000);
+  setTimeout(() => {
+    window.location.href = "/";
+  }, 2000);
   return (
     <div className="ThankYou">
       <div class="container">
