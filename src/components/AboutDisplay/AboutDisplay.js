@@ -1,30 +1,37 @@
+import { useEffect } from "react";
 import "./AboutDisplay.css";
 
 export default function AboutDisplay() {
-  const revealElements = document.querySelectorAll("[data-reveal]");
+  useEffect(() => {
+    const revealElements = document.querySelectorAll("[data-reveal]");
 
-  const scrollReveal = function () {
-    for (let i = 0; i < revealElements.length; i++) {
-      const isElementsOnScreen =
-        revealElements[i].getBoundingClientRect().top < window.innerHeight;
+    const scrollReveal = function () {
+      for (let i = 0; i < revealElements.length; i++) {
+        const isElementsOnScreen =
+          revealElements[i].getBoundingClientRect().top < window.innerHeight;
 
-      if (isElementsOnScreen) {
-        revealElements[i].classList.add("revealed");
-      } else {
-        revealElements[i].classList.remove("revealed");
+        if (isElementsOnScreen) {
+          revealElements[i].classList.add("revealed");
+        } else {
+          revealElements[i].classList.remove("revealed");
+        }
       }
-    }
-  };
+    };
 
-  window.addEventListener("scroll", scrollReveal);
-  window.addEventListener("load", scrollReveal);
+    window.addEventListener("scroll", scrollReveal);
+    window.addEventListener("load", scrollReveal);
+
+    return () => {
+      window.removeEventListener("scroll", scrollReveal);
+      window.removeEventListener("load", scrollReveal);
+    };
+  }, []);
 
   return (
     <div className="AboutDisplay">
       <div className="container">
         <section className="section">
           <div className="image-box" data-reveal="left">
-          
             <img
               src="https://i.pinimg.com/originals/03/85/8d/03858d665ebd7a768520c92b5d2407da.jpg"
               alt=""
@@ -116,5 +123,4 @@ export default function AboutDisplay() {
       </div>
     </div>
   );
-  
 }
