@@ -9,6 +9,7 @@
 
 .FooterDisplay .container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .FooterDisplay .container .content {
@@ -76,7 +77,7 @@
   padding-top: 20px;
 
 }
-@media (max-width: 767px) {
+@media (max-width: 770px) {
   .FooterDisplay .Logo img {
     width: 60%;
   }
