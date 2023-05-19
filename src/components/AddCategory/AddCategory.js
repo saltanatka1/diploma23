@@ -2,6 +2,7 @@ import { addDoc } from "firebase/firestore";
 import { useContext, useState } from "react";
 import { categoryCollection } from "../../firebase";
 import { AppContext } from "../../App";
+import"./AddCategory.css";
 
 const AddCategory = () => {
   const { user } = useContext(AppContext);
@@ -49,9 +50,9 @@ const AddCategory = () => {
         value={category}
         placeholder="Category name"
         onChange={onChangeCategory}
-        
+        className="category-name"
       />
-      <button onClick={onAddCategory} disabled={isSubmitting}>
+      <button onClick={onAddCategory} disabled={isSubmitting} className="send">
         +
       </button>
     </div>
