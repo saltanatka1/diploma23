@@ -44,6 +44,8 @@
   cursor: pointer;
   text-align: center;
   transition: 0.3ms;
+  border-bottom: 1px solid #da2d2d;
+  margin: 10px;
 }
 .contact a:hover {
   box-shadow: 0 10px 5px -5px rgba(30, 129, 204, 0.2);
