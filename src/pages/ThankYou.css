@@ -22,6 +22,11 @@
 .ThankYou .container {
   margin: 20px;
 }
+.ThankYou p {
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+}
 
 @keyframes textclip {
   to {
@@ -36,6 +41,8 @@
   .col-md-12 {
     margin: auto;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -46,5 +53,8 @@
   .col-md-12 {
     margin: auto;
     height: 100vh;
+  }
+  .ThankYou p {
+    font-size: 18px;
   }
 }
