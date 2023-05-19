@@ -1,24 +1,34 @@
-.container {
+.Product .container {
   display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
 }
 .content-product {
   display: flex;
   flex-direction: row;
-  max-width: 40vw;
+  flex-wrap: wrap;
+  width: 50vw;
 }
 
-.descriptionHeader{
+.descriptionHeader {
   flex-direction: column;
 }
 .descriptionHeader img {
-  max-width: 200px;
+  width: 50vw;
 }
 
 .descriptionContent {
   margin: 20%;
+  display: flex;
   flex-direction: column;
 }
 .descriptionContent span {
+  margin: 0 auto;
+  border-bottom: 1px solid red;
+  font-size: 25px;
+}
+.descriptionContent p {
+  text-align: center;
   padding: 10px;
-  border: 1px solid #0000006b;
+  font-size: 20px;
 }
