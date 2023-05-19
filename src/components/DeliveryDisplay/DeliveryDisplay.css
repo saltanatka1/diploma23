@@ -604,3 +604,8 @@
   display: none;
 }
 
+@media screen and (max-width: 770px) {
+  .DeliveryDisplay .progress_inner {
+    width:70%;
+  }
+}
