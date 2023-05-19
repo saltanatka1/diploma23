@@ -1,12 +1,13 @@
 .CartList .CartItem {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   padding: 3px;
   border: 2px solid black;
-  margin-top: 30px;
-  margin-bottom: 30px;
+
+  margin: 30px 10px;
 }
 
 .CartList .CartItem img {
@@ -24,14 +25,13 @@
   font-size: 17px;
 }
 
-.remove{
-background-color: transparent;
-border: none;
-cursor: pointer;
+.remove {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-
 .remove img {
-  width:40px;
-  height:40px;
+  width: 40px;
+  height: 40px;
 }
