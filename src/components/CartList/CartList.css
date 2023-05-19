@@ -18,6 +18,7 @@
 
 .CartItem .counter {
   width: 30px;
+  color: black;
 }
 .CartItem .link-cart {
   text-decoration: none;
