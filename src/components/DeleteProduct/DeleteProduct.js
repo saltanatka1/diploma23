@@ -28,7 +28,7 @@ export default function DeleteProduct({ product }) {
 
   return (
     <button className="DeleteProduct" onClick={onDeleteClick}>
-      -
+      Delete
     </button>
   );
 }
