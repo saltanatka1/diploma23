@@ -49,6 +49,7 @@ const AddCategory = () => {
         value={category}
         placeholder="Category name"
         onChange={onChangeCategory}
+        
       />
       <button onClick={onAddCategory} disabled={isSubmitting}>
         +
