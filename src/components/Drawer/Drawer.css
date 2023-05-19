@@ -49,6 +49,10 @@ border: 1px solid #000;
 box-shadow: none;
 }
 
+.Drawer .Logo img {
+  width: 50%;
+}
+
 
 
 @media (min-width: 550px) {
