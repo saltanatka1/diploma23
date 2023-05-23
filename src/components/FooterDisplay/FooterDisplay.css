@@ -54,6 +54,9 @@
 .contact-about p {
   margin: 5px;
 }
+.contact-about strong {
+  padding-right: 5px;
+}
 .contacts h3 {
   text-align: center;
 }

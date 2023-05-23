@@ -36,15 +36,15 @@ function FooterDisplay() {
             {" "}
             <div className="contact-about">
               <p>
-                <strong>Phone:</strong>
+                <strong>Phone: </strong>
                 <Link href="tel:+996708813744" target="blank">
-                  +996708813744
+                    +996708813744
                 </Link>
               </p>
               <p>
-                <strong>Email:</strong>
+                <strong>Email: </strong>
                 <Link href="email:egizbaevasaltanat05@gmail.com" target="blank">
-                  egizbaevasaltanat05@gmail.com
+                    egizbaevasaltanat05@gmail.com
                 </Link>
               </p>
             </div>
