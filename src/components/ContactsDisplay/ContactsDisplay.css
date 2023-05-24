@@ -37,6 +37,9 @@
   padding: 10px;
 }
 
+.contact .num {
+  border-bottom: 1px solid #da2d2d;
+}
 
 .contact a {
   text-decoration: none;
