@@ -203,10 +203,13 @@
 }
 @media screen and (max-width: 580px) {
   #parallax-world-of-ugg .block {
-    padding: 10px 15px;
-    width: 200px;
+    padding: 10px 15px 20px 0px;
+    width: 100%;
   }
   @media (max-width:425px) {
-    
+    #parallax-world-of-ugg .block {
+      padding: 10px 15px 20px 0px;
+      width: 100%;
+    }
   }
 }
