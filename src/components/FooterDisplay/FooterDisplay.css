@@ -80,6 +80,10 @@
   padding-top: 20px;
 
 }
+
+.GoUp img {
+  width: 10%;
+}
 @media (max-width: 770px) {
   .FooterDisplay .Logo img {
     width: 60%;
