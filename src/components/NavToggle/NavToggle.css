@@ -13,7 +13,7 @@
   background-color: rgb(21, 21, 21);
   transition: 0.2s;
 }
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   .NavToggle {
     display: inline-block;
   }
