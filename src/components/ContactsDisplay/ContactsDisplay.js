@@ -13,11 +13,11 @@ export default function ContactsDisplay() {
               visitors and customers. Check out these helpful tips and contact
               us page examples.
             </p>
-            <Link href="tel:+996708813744" className="num">+996708813744</Link>
+            <a href="tel:+996708813744" className="num">+996708813744</a>
             <br/>
-            <Link href="email:egizbaevasaltanat05@gmail.com" className="num">
+            <a href="email:egizbaevasaltanat05@gmail.com" className="num">
               egizbaevasaltanat05@gmail.com
-            </Link>
+            </a>
           </div>
           <div className="image-contact">
             <img
