@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import "./ContactsDisplay.css";
 
 export default function ContactsDisplay() {
@@ -15,7 +15,7 @@ export default function ContactsDisplay() {
             </p>
             <a href="tel:+996708813744" className="num">+996708813744</a>
             <br/>
-            <a href="email:egizbaevasaltanat05@gmail.com" className="num">
+            <a href="gmail:egizbaevasaltanat05@gmail.com" className="num">
               egizbaevasaltanat05@gmail.com
             </a>
           </div>
