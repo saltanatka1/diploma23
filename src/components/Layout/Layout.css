@@ -15,12 +15,17 @@
   background-color: #D4D3D3;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   .Layout header > .Nav {
     display: none;
   } 
 }
-@media (max-width:425px) {
+@media (min-width:455px) {
+  .Layout aside > .CategoryBurger  {
+    display: none;
+  }
+}
+@media (max-width:455px) {
   .Layout {
     display: grid;
     grid-template-areas: "header header "
@@ -31,6 +36,9 @@
     max-width: 1420px;
     margin: 0 auto;
   }
+  .Layout aside > .CategoryList {
+    display: none;
+  }
 }
 
 .Layout aside {
@@ -38,6 +46,7 @@
 }
 .Layout main {
   grid-area: main;
+  margin: 0 auto;
 }
 .Layout footer {
   grid-area: footer;
