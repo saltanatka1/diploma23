@@ -34,6 +34,10 @@
   margin: 10px;
 }
 
+.CategoryList ul li a:hover {
+  font-weight: 600;
+}
+
 .CategoryList .icon {
   max-width: 25px;
   margin: 5px 10px 0px 5px;
