@@ -177,7 +177,7 @@
 
 /* Media Queries */
 /**************************/
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   #parallax-world-of-ugg .block {
     padding: 30px;
     width: 500px;
@@ -205,5 +205,8 @@
   #parallax-world-of-ugg .block {
     padding: 10px 15px;
     width: 200px;
+  }
+  @media (max-width:425px) {
+    
   }
 }
