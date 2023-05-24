@@ -8,11 +8,18 @@ import Footer from "../../pages/Footer";
 import NavToggle from "../NavToggle/NavToggle";
 import Drawer from "../Drawer/Drawer";
 import { useState } from "react";
+import CategoryBurger from "../CategoryBurger/CategoryBurger";
+import CategoryToggle from "../CategoryToggle/CategoryToggle";
 export default function Layout({children}) {
     const [drawerOpen, setDrawerOpen] = useState(false);
   
     function toggleDrawer() {
       setDrawerOpen(!drawerOpen);
+    }
+    const [burgerOpen, setBurgerOpen] = useState(false);
+  
+    function toggleBurger() {
+      setBurgerOpen(!burgerOpen);
     }
   return (
     <div className="Layout">
@@ -26,6 +33,8 @@ export default function Layout({children}) {
       </header>
       <aside>
         <CategoryList/>
+        <CategoryBurger open={burgerOpen} toggle={toggleBurger}/>
+        <CategoryToggle callback={toggleBurger} />
       </aside>
       <main>{children}</main>
       <footer><Footer/></footer>
