@@ -85,7 +85,7 @@ function FooterDisplay() {
         <div className="GoUp">
           <Link href="#" onClick={scrollToTop}>
             <i class="fa-solid fa-arrow-up"></i>
-            <h3>GO UP</h3>
+            <img src="https://cdn4.iconfinder.com/data/icons/colorful-basic-arrows/515/arrow_up_circle_lightblue-512.png" alt="go up" />
           </Link>
         </div>
       </div>
