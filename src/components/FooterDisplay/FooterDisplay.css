@@ -61,7 +61,7 @@
   text-decoration: none;
 }
 .contact-about .con:hover {
-border-bottom: 1px solid #e51515;
+  border-bottom: 1px solid #e51515;
 }
 .contacts h3 {
   text-align: center;
@@ -97,5 +97,11 @@ border-bottom: 1px solid #e51515;
 @media (max-width: 770px) {
   .FooterDisplay .Logo img {
     width: 60%;
+  }
+}
+@media (max-width: 400px) {
+  .FooterDisplay .container .content {
+    max-width: 200px;
+    margin: 40px;
   }
 }
