@@ -43,7 +43,7 @@
   margin: 5px 10px 0px 5px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 760px) and (min-width: 550px) {
   .CategoryList ul li a span {
     display: none;
   }
@@ -61,7 +61,7 @@
 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 550px) and (min-width:455px){
   .CategoryList ul li a span {
     display: none;
   }
