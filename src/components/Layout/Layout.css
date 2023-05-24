@@ -20,6 +20,18 @@
     display: none;
   } 
 }
+@media (max-width:425px) {
+  .Layout {
+    display: grid;
+    grid-template-areas: "header header "
+    "aside aside"
+    "main main"
+    "footer footer";
+    grid-template-columns: 4fr;
+    max-width: 1420px;
+    margin: 0 auto;
+  }
+}
 
 .Layout aside {
   grid-area: aside;
