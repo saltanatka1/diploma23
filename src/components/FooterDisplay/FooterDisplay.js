@@ -43,7 +43,7 @@ function FooterDisplay() {
               </p>
               <p>
                 <strong>Email: </strong>
-                <a href="email:egizbaevasaltanat05@gmail.com" target="blank" className="con">
+                <a href="gmail:egizbaevasaltanat05@gmail.com" target="blank" className="con">
                     egizbaevasaltanat05@gmail.com
                 </a>
               </p>
