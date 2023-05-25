@@ -1,16 +1,16 @@
+
 .CartList .CartItem {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  width: 1000px;
   align-items: center;
   padding: 3px;
   border: 2px solid black;
-
   margin: 30px 10px;
+  display: grid;
+  grid-template-areas: ".product-picture .link-cart .counter .price .remove ";
+  grid-template-columns: 2fr 3fr 1fr 1fr 1fr;
 }
 
-.CartList .CartItem img {
+.CartList .CartItem .product-picture {
   width: 80px;
   height: 70px;
   border-radius: 100%;
@@ -24,6 +24,7 @@
   text-decoration: none;
   color: black;
   font-size: 17px;
+  margin-right: 10px;
 }
 
 .remove {
