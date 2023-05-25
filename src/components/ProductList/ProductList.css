@@ -47,3 +47,8 @@
 }
 
 
+@media (max-width:455px){
+  .productItem{
+    margin:0 auto ;
+  }
+}
