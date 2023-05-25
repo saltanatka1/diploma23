@@ -32,6 +32,11 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transform: scale(1);
+  transition: 0.3ms;
+}
+.remove:hover {
+  transform: scale(1.1);
 }
 
 .remove img {
