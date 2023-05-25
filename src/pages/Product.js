@@ -23,7 +23,7 @@ export default function Product() {
           </div>
           <div className="descriptionContent">
             <span>{product.price} $</span>
-            {<p>{product.description}</p>}
+            {<p>{product.description} Kyrgyz clothing reflects the rich cultural heritage and traditional lifestyle of the Kyrgyz people, who are an ethnic group primarily inhabiting the Central Asian region. The traditional attire of the Kyrgyz is not only functional but also carries deep historical and symbolic significance.</p>}
           </div>
         </div>
       </div>
