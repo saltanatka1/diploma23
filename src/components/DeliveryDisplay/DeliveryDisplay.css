@@ -604,8 +604,22 @@
   display: none;
 }
 
-@media screen and (max-width: 770px) {
+@media (max-width: 1175px){
+  .DeliveryDisplay {
+    height: 100vh;
+  }
   .DeliveryDisplay .progress_inner {
     width:70%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 800px) {
+  .DeliveryDisplay {
+    height: 100vh;
+  }
+  .DeliveryDisplay .progress_inner {
+    width:70%;
+    left: 20%;
   }
 }
