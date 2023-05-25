@@ -3,7 +3,6 @@ export default function DeliveryDisplay() {
   return (
     <div className="DeliveryDisplay">
       <div className="container">
-        {" "}
         <div className="progress">
           <div className="progress_inner">
             <div className="progress_inner__step">
