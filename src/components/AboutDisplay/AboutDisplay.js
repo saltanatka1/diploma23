@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import "./AboutDisplay.css";
+import img from "../../assets/zyro-image.png"
+import image from "../../assets/zyro-image (2).png"
 
 export default function AboutDisplay() {
   useEffect(() => {
@@ -33,7 +35,7 @@ export default function AboutDisplay() {
         <section className="section">
           <div className="image-box" data-reveal="left">
             <img
-              src="https://i.pinimg.com/originals/03/85/8d/03858d665ebd7a768520c92b5d2407da.jpg"
+              src="https://i.pinimg.com/originals/bc/b7/16/bcb716f54b576c1185c9572dd54cab40.jpg"
               alt=""
               className="img-about"
             />
@@ -70,14 +72,14 @@ export default function AboutDisplay() {
           </div>
           <div className="image-box" data-reveal="left">
             <img
-              src="https://i.pinimg.com/originals/fb/f3/4b/fbf34b4cc190fa9bc8e657cdbba0d5a0.jpg"
+              src={img}
               alt=""
               className="img-about"
             />
           </div>
           <div className="image-box" data-reveal="left">
             <img
-              src="https://i.pinimg.com/originals/2b/64/ec/2b64ec2652e8053690acc4290920ed10.jpg"
+              src={image}
               alt=""
               className="img-about"
             />
