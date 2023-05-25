@@ -30,7 +30,7 @@ export default function CartList() {
     // вывести  товары и их кол-во
     .map((product) => (
       <div className="CartItem" key={product.id}>
-        <img src={product.picture} alt={product.name} />
+        <img src={product.picture} alt={product.name} className="product-picture" />
         <Link to={"/product/" + product.slug} className="link-cart">{product.name}</Link>
         <input
           type="number"
@@ -39,7 +39,7 @@ export default function CartList() {
           min={1}
           onChange={(event) => onQuantityChange(product, +event.target.value)}
         />
-        <span>{cart[product.id] * product.price} $</span>
+        <span className="price">{cart[product.id] * product.price} $</span>
         <button onClick={() => onItemRemove(product)} className="remove">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Icons8_flat_delete_generic.svg" alt ="remove" />
         </button>
