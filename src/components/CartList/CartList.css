@@ -1,5 +1,6 @@
 
 .CartList .CartItem {
+  width:60vw;
   align-items: center;
   padding: 3px;
   border: 2px solid black;
@@ -10,8 +11,9 @@
 }
 
 .CartList .CartItem .product-picture {
-  width: 80px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
+  margin-left: 10%;
   border-radius: 100%;
 }
 
