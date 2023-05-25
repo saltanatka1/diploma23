@@ -1,13 +1,12 @@
-
 .CartList .CartItem {
-  width:60vw;
+  width: 60vw;
   align-items: center;
   padding: 3px;
   border: 2px solid black;
   margin: 30px 10px;
   display: grid;
   grid-template-areas: ".product-picture .link-cart .counter .price .remove ";
-  grid-template-columns: 2fr 3fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
 }
 
 .CartList .CartItem .product-picture {
@@ -42,4 +41,27 @@
 .remove img {
   width: 40px;
   height: 40px;
+}
+
+@media (max-width: 1100px) {
+  .CartList .CartItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 899px) {
+  .CartList .CartItem {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .CartList .CartItem {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
