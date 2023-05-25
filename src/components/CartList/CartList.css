@@ -57,7 +57,7 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 540px) {
   .CartList .CartItem {
     display: flex;
     flex-direction: column;
