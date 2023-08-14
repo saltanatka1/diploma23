@@ -51,7 +51,7 @@ function FooterDisplay() {
             <div className="social-network">
               <Link to="https://wa.me/qr/OP6ER6VEV7TIM1" target="blank">
                 <img
-                  src="https://pixlok.com/wp-content/uploads/2021/12/Whatsapp-Icon-SVG-pdmvddw.png"
+                  src="https://www.google.com/search?sca_esv=556737795&sxsrf=AB5stBg_tgs-HC3_5Afs8aAo6QDMTw0udQ:1692013472756&q=whatsapp+%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0+svg&tbm=isch&source=lnms&sa=X&sqi=2&ved=2ahUKEwjrqP6vidyAAxUnFRAIHRIZB8sQ0pQJegQIDBAB&biw=1536&bih=715&dpr=1.25#imgrc=wHYI9GtORTXn-M"
                   alt="whatsapp icon"
                 />
               </Link>
